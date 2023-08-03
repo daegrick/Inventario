@@ -8,5 +8,6 @@
         public DateTime DataAquisicao { get; set; }
         public string NumeroSerie { get; set; } = string.Empty;
         public Guid CategoriaIde { get; set; }
+        public DateTime AlteradoEm { get; set; }
     }
 }
