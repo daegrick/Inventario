@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario", "Inventario\Inventario.csproj", "{3DD8EA5D-8F01-49E4-B10A-DAF200FF8E5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventario", "Inventario\Inventario.csproj", "{3DD8EA5D-8F01-49E4-B10A-DAF200FF8E5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{9B75B0FA-BE0E-493B-824C-33567A4C6592}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entity", "Entity\Entity.csproj", "{9B75B0FA-BE0E-493B-824C-33567A4C6592}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controle", "Controle\Controle.csproj", "{54577FED-16B3-4B9E-93B0-F100DE95AFD2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Controle", "Controle\Controle.csproj", "{54577FED-16B3-4B9E-93B0-F100DE95AFD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventario.Views", "Inventario.Views\Inventario.Views.csproj", "{78003936-B279-4DF4-81F2-2547D420A2ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventario.Views", "Inventario.Views\Inventario.Views.csproj", "{78003936-B279-4DF4-81F2-2547D420A2ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "Utils\Utils.csproj", "{7DCDF374-9163-40A0-96D4-5FC23BD2DFF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj", "{7DCDF374-9163-40A0-96D4-5FC23BD2DFF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{F0278A7F-A861-4084-B0F0-480C55B2393B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7DCDF374-9163-40A0-96D4-5FC23BD2DFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DCDF374-9163-40A0-96D4-5FC23BD2DFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DCDF374-9163-40A0-96D4-5FC23BD2DFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0278A7F-A861-4084-B0F0-480C55B2393B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0278A7F-A861-4084-B0F0-480C55B2393B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0278A7F-A861-4084-B0F0-480C55B2393B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0278A7F-A861-4084-B0F0-480C55B2393B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
