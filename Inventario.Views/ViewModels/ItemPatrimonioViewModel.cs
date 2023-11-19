@@ -12,16 +12,16 @@ namespace Inventario.Views.ViewModels
         private readonly ItemPatrimonio itemPatrimonio;
         private ReadOnlyDictionary<Guid, string> categorias;
 
-
         public ItemPatrimonioViewModel(ItemPatrimonio item)
         {
             itemPatrimonio = item;
+            categorias = new ReadOnlyDictionary<Guid, string>(InitializeCategorias());
         }
 
         public ItemPatrimonioViewModel()
         {
             itemPatrimonio = new ItemPatrimonio();
-            Categorias = new ReadOnlyDictionary<Guid, string>(InitializeCategorias());
+            categorias = new ReadOnlyDictionary<Guid, string>(InitializeCategorias());
         }
 
         public ReadOnlyDictionary<Guid, string> Categorias
@@ -62,9 +62,15 @@ namespace Inventario.Views.ViewModels
             set => SetProperty(itemPatrimonio.CategoriaIde, value, itemPatrimonio, (u, n) => u.CategoriaIde = n, true);
         }
 
+        public int Id
+        {
+            get => itemPatrimonio.Id;
+            set => SetProperty(itemPatrimonio.Id, value, itemPatrimonio, (u, n) => u.Id = n, true);
+        }
+
         private static Dictionary<Guid, string> InitializeCategorias() => new()
         {
-            {Guid.Parse("a069d444-9371-487e-8d59-52745ef1a44e"), "Moveis" },
+            { Guid.Parse("a069d444-9371-487e-8d59-52745ef1a44e"), "Móveis" },
             { Guid.Parse("2ee328d0-4329-48fa-8f0b-00113d34d9a4"), "Eletrônicos" }
         };
     }
